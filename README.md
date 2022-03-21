@@ -4,7 +4,7 @@ from sklearn import linear_model
 import numpy as np
 from matplotlib import pyplot as plt
 b = pd.read_csv("C:\\Users\\tvste\\OneDrive\\Desktop\\HR_comma_sep.csv")
-b1 = b[b['left']==1]
+b1 = b[b['left']==1}
 b2 = b[b['left']==0]
 c= pd.crosstab(b.Department,b.left)
 d = pd.pivot_table(b,index = ['Department'],columns=['left'], values=['satisfaction_level'])
